@@ -1,6 +1,6 @@
-angular.module('myStore.templates',['ngRoute'])
+var myApp = angular.module('myStore.templates',['ngRoute']);
 
-.config(['$routeProvider', function($routeProvider){
+myApp.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider){
     $routeProvider.
     when('/templates', {
         templateUrl: 'templates/templates.html',
@@ -10,12 +10,13 @@ angular.module('myStore.templates',['ngRoute'])
         templateUrl: 'templates/template-details.html',
         controller: 'TemplateDetailsCtrl'
     })
+    $locationProvider.hashPrefix('');
+}]);
+
+myApp.controller('TemplatesCtrl', ['$scope', function($scope) {
+
 }])
 
-.controller('TemplatesCtrl', ['$scope', function($scope) {
-
-}])
-
-.controller('TemplateDetailsCtrl', ['$scope', function($scope) {
+myApp.controller('TemplateDetailsCtrl', ['$scope', function($scope) {
 
 }]);
