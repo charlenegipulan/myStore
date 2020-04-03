@@ -13,8 +13,11 @@ myApp.config(['$routeProvider', '$locationProvider', function($routeProvider, $l
     $locationProvider.hashPrefix('');
 }]);
 
-myApp.controller('TemplatesCtrl', ['$scope', function($scope) {
-
+myApp.controller('TemplatesCtrl', ['$scope', '$http', function($scope, $http) {
+    $http.get('json/templates.json').then(function(data){
+        $scope.templates = data.data;
+        console.log($scope.templates);
+    });
 }])
 
 myApp.controller('TemplateDetailsCtrl', ['$scope', function($scope) {
