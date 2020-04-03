@@ -20,6 +20,12 @@ myApp.controller('TemplatesCtrl', ['$scope', '$http', function($scope, $http) {
     });
 }])
 
-myApp.controller('TemplateDetailsCtrl', ['$scope', function($scope) {
-
+myApp.controller('TemplateDetailsCtrl', ['$scope', '$routeParams', '$http', '$filter', function($scope, $routeParams, $http, $filter) {
+    var templateId = $routeParams.templateId;
+    $http.get('json/templates.json').then(function(data){
+        $scope.template = $filter('filter')(data.data, function(d){
+            return d.id == templateId;
+        })[0];
+        $scope.mainImage = $scope.template.images[0].name;
+    });
 }]);
