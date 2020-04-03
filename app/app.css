@@ -28,6 +28,10 @@
   margin-top: 80px;
 }
 
+.img-full{
+  width: 100%;
+}
+
 .templates{
   text-align: center;
 }

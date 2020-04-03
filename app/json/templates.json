@@ -1,0 +1,71 @@
+[
+	{
+		"id" : 1,
+		"name":"Bones",
+		"description":"Consectetur adipiscing elit. Vestibulum condimentum turpis nec nunc scelerisque convallis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas id diam enim.",
+		"type": "espresso",
+		"price": 9.99,
+		"images": [
+			{
+				"name": "bones.jpg"
+			}
+		]
+	},
+	{	
+		"id" : 2,
+		"name":"Caffe Vita",
+		"description":"Consectetur adipiscing elit. Vestibulum condimentum turpis nec nunc scelerisque convallis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas id diam enim.",
+		"type": "arabica beans",
+		"price": 9.99,
+		"images": [
+			{
+				"name": "caffevita.jpg"
+			}
+		],
+		"soldOut":true
+	},
+	{
+		"id" : 3,
+		"name":"Don Francisco",
+"description":"Consectetur adipiscing elit. Vestibulum condimentum turpis nec nunc scelerisque convallis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas id diam enim.",		"type": "Joomla",
+		"price": 12.99,
+		"images": [
+			{
+				"name": "donfrancisco.jpg"
+			}
+		]
+	},
+	{
+		"id" : 4,
+		"name":"Lair",
+"description":"Consectetur adipiscing elit. Vestibulum condimentum turpis nec nunc scelerisque convallis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas id diam enim.",		"type": "Joomla",
+		"price": 12.99,
+		"images": [
+			{
+				"name": "lair.jpg"
+			}
+		]
+	},
+	{
+		"id" : 5,
+		"name":"Sumatra",
+"description":"Consectetur adipiscing elit. Vestibulum condimentum turpis nec nunc scelerisque convallis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas id diam enim.",		"type": "html5",
+		"price": 9.99,
+		"images": [
+			{
+				"name": "sumatra.jpg"
+			}
+		]
+	},
+	{
+		"name":"The Original",
+"description":"Consectetur adipiscing elit. Vestibulum condimentum turpis nec nunc scelerisque convallis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas id diam enim.",		"type": "wordpress",
+		"price": 15.99,
+		"available": true,
+		"images": [
+			{
+				"name": "theoriginal.jpg"
+			}
+		]
+	}
+]
